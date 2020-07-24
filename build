@@ -1,0 +1,2 @@
+docker build --tag stdrickforce/hackthon .
+docker push stdrickforce/hackthon
