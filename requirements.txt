@@ -1,2 +1,5 @@
 flask
+matplot
 gunicorn
+azure-cognitiveservices-vision-computervision
+Pillow

@@ -1,0 +1,2 @@
+export ACCOUNT_REGION=southeastasia
+export ACCOUNT_KEY=189b640227c94a6f87975cc09e2f3f12
