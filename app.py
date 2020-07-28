@@ -8,8 +8,11 @@ def recognize():
     from flask import request
     data = request.files['file']
 
-    from api import image
-    r = image(data)
+    if data is None:
+        raise Exception("uploaded image file not found")
+
+    # from api import image
+    # r = image(data)
 
     # return json.dumps(r)
 
