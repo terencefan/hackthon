@@ -40,6 +40,7 @@ def image(data):
 
     m = {}
     for obj in response.json()['objects']:
+        print(obj)
         if 'parent' in obj and obj['parent']['object'] in set(['Fruit', 'Vegetable']):
             name = obj['object']
             item = m.setdefault(obj['object'], {
