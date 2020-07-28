@@ -6,10 +6,10 @@ app = Flask("ref")
 @app.route('/image', methods=["POST"])
 def recognize():
     from flask import request
-    # print(request.get_data())
+    data = request.files['file']
 
     from api import image
-    r = image(request.get_data())
+    r = image(data)
 
     return json.dumps(r)
 
