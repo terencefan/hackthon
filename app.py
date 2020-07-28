@@ -11,7 +11,20 @@ def recognize():
     from api import image
     r = image(data)
 
-    return json.dumps(r)
+    # return json.dumps(r)
+
+    return json.dumps([
+        {
+            "name": u"Apple",
+            "count": 1,
+            "expireTime": 7 * 24 * 60
+        },
+        {
+            "name": u"Orange",
+            "count": 1,
+            "expireTime": 7 * 24 * 60
+        }
+    ])
 
 
 @app.route('/barcode', methods=["POST"])
